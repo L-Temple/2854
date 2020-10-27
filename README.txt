@@ -1,5 +1,5 @@
 我的世界mod开发学习
-一下是使用forge mdk 搭建环境使用说明
+以下是使用forge mdk 搭建环境使用说明
 -------------------------------------------
 Source installation information for modders
 -------------------------------------------
