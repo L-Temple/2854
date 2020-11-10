@@ -1,18 +1,19 @@
 package com.lost_temple.first.client;
 
+import com.lost_temple.first.common.CommonProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-public class ClientProxy extends CommonProxy implements ClientProxy1 {
-    @Override
+public class ClientProxy extends CommonProxy {
+
     public void preInit(FMLPreInitializationEvent event){
         super.preInit(event);
     }
-    @Override
+
     public void init(FMLInitializationEvent event){
         super.init(event);
     }
-    @Override
+
     public void postInit(FMLPostInitializationEvent event){
         super.postInit(event);
     }

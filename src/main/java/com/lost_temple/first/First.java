@@ -8,15 +8,15 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-@Mod(modid = First.MODID, name = First.NAME, version = First.VERSION, acceptedMinecraftVersions = "1.12.2”)
+@Mod(modid = First.MODID, name = First.NAME, version = First.VERSION, acceptedMinecraftVersions = "1.12.2")
 public class First {
-    public static final String MODID = "first”;
-    public static final String NAME = "First”;
-    public static final String VERSION = "1.0.0”;
-    @SidedProxy(clientSide = "com.lost_temple.first.client.ClientProxy”,serverSide = “com.lost_temple.first.common.CommonProxy”)
+    public static final String MODID = "first";
+    public static final String NAME = "First";
+    public static final String VERSION = "1.0.0";
+    @SidedProxy(clientSide = "com.lost_temple.first.client.ClientProxy",serverSide = "com.lost_temple.first.common.CommonProxy")
     public static CommonProxy proxy;
-    @Instance(RealMining.MODID)
-    public static RealMining instance;
+    @Instance(First.MODID)
+    public static First instance;
     @EventHandler
     public static void preInit(FMLPreInitializationEvent event){
         proxy.preInit(event);
